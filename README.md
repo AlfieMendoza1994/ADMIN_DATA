@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+[![Run on Repl.it](https://repl.it/badge/github/AlfieMendoza1994/ADMIN_DATA)](https://repl.it/github/AlfieMendoza1994/ADMIN_DATA)
