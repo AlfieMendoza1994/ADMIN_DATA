@@ -1,0 +1,12 @@
+@import 'bootstrap';
+
+.login {
+  &__container {
+    height: 100vh;
+
+    &--form {
+      border: 1px solid #eee;
+      padding: 75px;
+    }
+  }
+}

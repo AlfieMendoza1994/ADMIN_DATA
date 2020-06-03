@@ -1,0 +1,20 @@
+.d-flex.justify-content-center.align-items-center.login__container
+  .flex-column.text-align-center.login__container--form
+    h2
+      | Log in
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field.form-group
+        = f.label :employee_number
+        br
+        = f.text_field :employee_number, autofocus: true, autocomplete: "employee_number", class: 'form-control'
+      .field
+        = f.label :password
+        br
+        = f.password_field :password, autocomplete: "current-password", class: 'form-control'
+      - if devise_mapping.rememberable?
+        .field.form-check
+          = f.check_box :remember_me, class: 'form-check-input'
+          = f.label :remember_me, class: 'form-check-label'
+      .actions
+        = f.submit "Log in", class: 'btn btn-primary btn-sm'
+    = render "devise/shared/links"
